@@ -26,7 +26,7 @@
           <%= line_item.quantity %>
         </td>
         <td>
-          <%= humanized_money_with_symbol line_item.product.price * line_item.quantity %>
+          <%= humanized_money_with_symbol line_item[:total_price_cents] / 100.00 %>
         </td>
       </tr>
     <% end %>
@@ -37,7 +37,7 @@
           TOTAL:
         </th>
         <th>
-          <%= humanized_money_with_symbol cart_subtotal_cents %>
+          <%= humanized_money_with_symbol enhanced_cart.map {|line_item| line_item[:total_price_cents]}.sum / 100.00 %>
         </th>
       </tr>
     </tfoot>
