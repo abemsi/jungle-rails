@@ -9,7 +9,7 @@
   </div>
 
   <div>
-    <h3>Order Summary:</h3>
+    <h3>Order Summary for <%= @email %>:</h3>
     <%= render 'order', enhanced_cart: @order.line_items %>
   </div>
   
