@@ -21,6 +21,7 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
     # ACT
     visit root_path
     find("a.btn.btn-default.pull-right", match: :first).click
+    # first('article.product').find('a.btn.btn-default.pull-right').click
     
     # VERIFY & DEBUG
     expect(page).to have_css 'article.product-detail', count: 1
