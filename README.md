@@ -2,6 +2,8 @@
 
 A mini e-commerce application built with Rails 4.2.
 
+## Final Product
+
 !["products home page"](https://github.com/abemsi/jungle-rails/blob/master/docs/products_home.png?raw=true)
 
 ## Setup
